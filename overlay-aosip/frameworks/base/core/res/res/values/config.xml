@@ -73,8 +73,8 @@
     <!-- Does the device have a notification/battery LED? -->
     <bool name="config_deviceHasLED">false</bool>
 
-    <!-- FOD icon dim-->
-    <bool name="config_targetUsesInKernelDimming">true</bool>
+    <!-- Does the device have a notification led -->
+    <bool name="config_hasNotificationLed">false</bool>
 
     <!-- Whether device has dash charging support -->
     <bool name="config_hasDashCharger">true</bool>
