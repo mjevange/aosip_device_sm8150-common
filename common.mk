@@ -186,6 +186,7 @@ PRODUCT_PACKAGES += \
     ftm_power_config.sh \
     init.class_main.sh \
     init.crda.sh \
+    init.guacamoleg.rc \
     init.mdm.sh \
     init.msm.usb.configfs.rc \
     init.oem.debug.rc \
