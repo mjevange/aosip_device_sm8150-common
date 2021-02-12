@@ -1,0 +1,2 @@
+# Allow vendor_per_mgr to search vendor_debugfs_ipc
+allow vendor_per_mgr vendor_debugfs_ipc:dir { search };

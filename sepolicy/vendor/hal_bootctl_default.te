@@ -1,0 +1,2 @@
+# Allow hal_bootctl_default to get attributes from vendor_uefi_block_device
+allow hal_bootctl_default vendor_uefi_block_device:blk_file { getattr };

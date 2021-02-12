@@ -1,0 +1,2 @@
+# Allow hal_wifi_default to read and search in vendor_tombstone_data_file
+allow hal_wifi_default vendor_tombstone_data_file:dir { read search };

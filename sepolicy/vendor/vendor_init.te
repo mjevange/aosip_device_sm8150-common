@@ -26,3 +26,12 @@ get_prop(vendor_init, vendor_tee_listener_prop)
 
 # Allow vendor_init to check encryption status of system_data_file
 allow vendor_init system_data_file:dir create_dir_perms;
+
+# Allow vendor_init to read default_prop
+allow vendor_init default_prop:file { read };
+
+# Allow vendor_init to read persist_debug_prop
+allow vendor_init persist_debug_prop:file { read };
+
+# Allow vendor_init to get attributes from debugfs
+allow vendor_init debugfs:file { getattr };

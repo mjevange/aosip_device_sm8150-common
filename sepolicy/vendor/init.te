@@ -9,3 +9,6 @@ allow op1_file self:filesystem associate;
 
 # Allow init to create vl53l1_socket
 allow init vl53l1_socket:sock_file create_file_perms;
+
+# Allow init to mount on vendor_tombstone_data_file
+allow init vendor_tombstone_data_file:dir { mounton };

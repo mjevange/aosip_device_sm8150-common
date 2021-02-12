@@ -1,2 +1,5 @@
 # Allow vendor_sensors to get vendor_sensors_prop
 get_prop(vendor_sensors, vendor_sensors_prop)
+
+# Allow vendor_sensors to read and search sysfs_project_info
+allow vendor_sensors sysfs_project_info:dir { read search };

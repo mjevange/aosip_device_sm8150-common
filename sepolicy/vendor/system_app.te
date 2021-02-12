@@ -12,3 +12,10 @@ allow system_app sysfs_fod:file rw_file_perms;
 
 # Allow system_app to read, open and get attributes of sysfs_graphics
 allow system_app sysfs_graphics:file { getattr open read };
+
+# Allow system_app to read, open, search, and get attributes in sysfs_zram
+allow system_app sysfs_zram:dir { search };
+allow system_app sysfs_zram:file { getattr open read };
+
+# Allow system_app to read, open, and get attribues in proc_pagetypeinfo
+allow system_app proc_pagetypeinfo:file { getattr open read };
